@@ -25,7 +25,7 @@ namespace login
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
             if (usernametTextBox.Text == "admin" && passwordtTextBox.Text == "admin")
             {
@@ -37,9 +37,10 @@ namespace login
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void LogOffButton_Click(object sender, RoutedEventArgs e)
         {
-
+            usernametTextBox.Clear();
+            passwordtTextBox.Clear();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
