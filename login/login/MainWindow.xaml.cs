@@ -27,6 +27,23 @@ namespace login
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (usernametTextBox.Text == "admin" && passwordtTextBox.Text == "admin")
+            {
+                resultLabel.Content = "U wordt ingelogd";
+            }
+            else
+            {
+                resultLabel.Content = "Uw gebruikernaam of wachtwoord is fout.";
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
